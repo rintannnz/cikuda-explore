@@ -34,7 +34,7 @@ if(isset($_POST['update'])) {
     if($result) {
         echo "<script>
                 alert('Data berhasil diupdate');
-                window.location.href='../main/daftar_pemesan.php';
+                window.location.href='../index.php?aksi=beranda';
               </script>";
     } else {
         echo "<script>
