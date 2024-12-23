@@ -15,38 +15,9 @@
     />
   </head>
   <body class="bg-light">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Salty</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#welcome">Home</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="main/pemesanan.php">Pemesanan</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#destinations">Destinations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#fasilitas">Tours</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#galery">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="main/daftar_pemesan.php">Daftar Pemesan</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <?php
+    include "components/navbar.php";
+    ?>
     <!-- Hero Section -->
     <header id="welcome" class="hero-section py-5">
       <div class="container">
