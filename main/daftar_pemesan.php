@@ -68,7 +68,7 @@ include "../lib/koneksi.php"
                     <?php
 
                     // Query untuk mengambil data
-                    $sql = "SELECT * FROM pemesanan";
+                    $sql = "SELECT * FROM pemesanan where is_deleted=0";
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
@@ -87,6 +87,7 @@ include "../lib/koneksi.php"
                                 <td>Rp " . number_format($row['total_tagihan'], 0, ',', '.') . "</td>
                                 <td>
                                     <a href='detail_pemesan.php?id={$row['id']}' class='btn btn-info btn-sm'>Lihat Detail</a>
+                                    <a href='../lib/hapus.php?id={$row['id']}' class='btn btn-danger btn-sm'>Hapus</a>
                                 </td>
                             </tr>";
                             $no++;
