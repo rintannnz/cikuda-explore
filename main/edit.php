@@ -1,6 +1,6 @@
 <?php
 // edit.php
-include "../lib/koneksi.php";
+include "lib/koneksi.php";
 
 // Ambil ID dari parameter URL
 $id = $_GET['id'];
@@ -28,7 +28,7 @@ $data = mysqli_fetch_assoc($result);
 
 <body class="bg-light mb-5">
 <?php
-include "../components/navbar.php";
+include "components/navbar.php";
 ?>
     <main class="form flex-shrink-0 my-5">
         <div class="container">

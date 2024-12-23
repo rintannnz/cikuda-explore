@@ -91,7 +91,7 @@ $conn->close();
             </tr>
         </table>
         <div class="d-flex justify-content-between mt-4">
-            <a href="../index.php" class="btn btn-secondary no-print">Kembali</a>
+            <a href="../index.php?aksi=detail" class="btn btn-secondary no-print">Kembali</a>
             <button class="btn btn-primary no-print" onclick="printPage()">Cetak</button>
         </div>
     </div>

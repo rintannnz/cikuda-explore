@@ -8,6 +8,9 @@ switch($aksi){
     case 'daftar':
         include 'main/pemesanan.php';
     break;
+    case 'edit':
+        include 'main/edit.php';
+    break;
     
     default:
         include 'main/beranda.php';

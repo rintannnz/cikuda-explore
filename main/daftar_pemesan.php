@@ -58,9 +58,9 @@ include "lib/koneksi.php";
                                 <td>{$row['jumlah_peserta']}</td>
                                 <td>Rp " . number_format($row['total_tagihan'], 0, ',', '.') . "</td>
                                 <td>
-                                    <a href='detail_pemesan.php?id={$row['id']}' class='btn btn-info btn-sm'>Lihat Detail</a>
+                                    <a href='main/detail_pemesan.php?id={$row['id']}' class='btn btn-info btn-sm'>Lihat Detail</a>
                                     <a href='lib/hapus.php?id={$row['id']}' class='btn btn-danger btn-sm' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data ini?\")'>Hapus</a>
-                                    <a href='main/edit.php?id={$row['id']}' class='btn btn-warning btn-sm'>edit</a>
+                                    <a href='index.php?aksi=edit&id={$row['id']}' class='btn btn-warning btn-sm'>edit</a>
                                 </td>
                             </tr>";
                             $no++;
