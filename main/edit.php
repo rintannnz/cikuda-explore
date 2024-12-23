@@ -27,25 +27,37 @@ $data = mysqli_fetch_assoc($result);
 </head>
 
 <body class="bg-light mb-5">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Salty</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="daftar_pemesanan.php">Daftar Pemesanan</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Salty</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="main/pemesanan.php">Pemesanan</a>
+            </li>
 
+            <li class="nav-item">
+              <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fasilitas">Tours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="main/daftar_pemesan.php">Daftar Pemesan</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <main class="form flex-shrink-0 my-5">
         <div class="container">
             <form method="post" action="../lib/proses_edit.php">

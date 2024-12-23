@@ -43,6 +43,9 @@ include "../lib/tambah.php";
           <li class="nav-item">
             <a class="nav-link" href="#galery">Gallery</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="daftar_pemesan.php">Daftar Pemesan</a>
+          </li>
         </ul>
       </div>
     </div>
