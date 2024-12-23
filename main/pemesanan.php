@@ -1,5 +1,5 @@
 <?php
-include "../lib/tambah.php";
+include "lib/tambah.php";
 ?>
 
 <!DOCTYPE html>

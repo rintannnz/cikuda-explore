@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
             '$paket_inap', '$paket_transport', '$paket_makan', '$jumlah_peserta', '$total')";
     // Eksekusi query
     if ($conn->query($sql) === TRUE) {
-       header("Location:../index.php");
+       header("Location:index.php?aksi=beranda");
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

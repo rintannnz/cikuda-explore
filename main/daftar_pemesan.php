@@ -1,5 +1,5 @@
 <?php
-include "../lib/koneksi.php"
+include "lib/koneksi.php";
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ include "../lib/koneksi.php"
 </head>
 <body>
 <?php
-    include "../components/navbar.php";
+    include "components/navbar.php";
 ?>
 <div class="container mt-5">
         <h1 class="text-center mb-4">Data Pemesanan</h1>
@@ -59,7 +59,7 @@ include "../lib/koneksi.php"
                                 <td>Rp " . number_format($row['total_tagihan'], 0, ',', '.') . "</td>
                                 <td>
                                     <a href='detail_pemesan.php?id={$row['id']}' class='btn btn-info btn-sm'>Lihat Detail</a>
-                                    <a href='../lib/hapus.php?id={$row['id']}' class='btn btn-danger btn-sm' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data ini?\")'>Hapus</a>
+                                    <a href='lib/hapus.php?id={$row['id']}' class='btn btn-danger btn-sm' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data ini?\")'>Hapus</a>
                                     <a href='edit.php?id={$row['id']}' class='btn btn-warning btn-sm'>edit</a>
                                 </td>
                             </tr>";

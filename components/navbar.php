@@ -10,7 +10,7 @@
               <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="main/pemesanan.php">Pemesanan</a>
+            <a class="nav-link" href="index.php?aksi=daftar">Pemesanan</a>
             </li>
 
             <li class="nav-item">
@@ -23,7 +23,7 @@
               <a class="nav-link" href="#galery">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="main/daftar_pemesan.php">Daftar Pemesan</a>
+              <a class="nav-link" href="index.php?aksi=detail">Daftar Pemesan</a>
             </li>
           </ul>
         </div>
