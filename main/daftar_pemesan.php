@@ -26,7 +26,7 @@ include "../lib/koneksi.php"
               <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="main/pemesanan.php">Pemesanan</a>
+            <a class="nav-link" href="pemesanan.php">Pemesanan</a>
             </li>
 
             <li class="nav-item">
@@ -88,6 +88,7 @@ include "../lib/koneksi.php"
                                 <td>
                                     <a href='detail_pemesan.php?id={$row['id']}' class='btn btn-info btn-sm'>Lihat Detail</a>
                                     <a href='../lib/hapus.php?id={$row['id']}' class='btn btn-danger btn-sm' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data ini?\")'>Hapus</a>
+                                    <a href='edit.php?id={$row['id']}' class='btn btn-warning btn-sm'>edit</a>
                                 </td>
                             </tr>";
                             $no++;
